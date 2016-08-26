@@ -1,0 +1,44 @@
+{
+  "name": "react-webpack-demo",
+  "version": "1.0.0",
+  "description": "webpack构建reactjs项目实例",
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "isomorphic-fetch": "^2.2.1",
+    "material-ui": "^0.15.0-alpha.2",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-motion": "^0.4.4",
+    "react-pull-to-refresh": "^1.0.6",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.1",
+    "react-router-redux": "^4.0.5",
+    "react-swipeable-views": "^0.6.5",
+    "react-tap-event-plugin": "^0.2.2",
+    "redux": "^3.5.2",
+    "redux-actions": "^0.10.1",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
+  },
+  "author": "gongwenyi",
+  "license": "ISC"
+}
