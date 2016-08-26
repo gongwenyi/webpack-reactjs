@@ -9,7 +9,7 @@ webpack+react+babel+redux+material-ui搭建的react项目模板
 
 3.npm run dev     开启本地服务，在浏览器输入localhost:8080查看
 ##3.用于生产环境
-1.注释或去掉build/index.html中的&ltscript src="http://localhost:8080/webpack-dev-server.js">&lt/script>,这个只是为了开发的时候便于调试
+1.注释或去掉build/index.html中的&lt;script src="http://localhost:8080/webpack-dev-server.js">&lt;/script>,这个只是为了开发的时候便于调试
 
 2.注释或去掉webpack.config.js中config下面entry中的'webpack/hot/dev-server'
 
