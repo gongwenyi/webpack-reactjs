@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+  	"eslint-plugin-import",
+  	"eslint-plugin-jsx-a11y",
+  	"eslint-plugin-react"
+  ],
+  "rules": {
+    "no-mixed-spaces-and-tabs": [2, "smart-tabs"],	// 不允许同时使用空格和tab缩进
+    "indent": [2, "tab"],														// 缩进2个空格，并且只能使用tab键缩进，不能使用空格
+    "react/jsx-indent": [2, "tab"],									// jsx缩进2个空格，并且只能使用tab键缩进，不能使用空格
+    "no-console": 0,																// 允许console.log()									
+    "no-underscore-dangle": 0,											// 允许以下划线_开头定义变量（例如:_name)
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],	// 允许文件名为.js或.jsx,这样在import的时候可以省略.jsx后缀
+    "react/jsx-indent-props": [2, "tab"],						// jsx标签的属性缩进2个空格，并且只能使用tab键缩进
+    "react/jsx-boolean-value": [2, "always"]				// jsx标签的属性如果为布尔值，必须写true或false，例如<div hide={true}></div>,不能省略，默认是可以省略的
+  }
+}
