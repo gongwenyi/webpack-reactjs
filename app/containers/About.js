@@ -3,9 +3,8 @@ import AboutPage from './../components/AboutPage';
 
 export default class About extends Component {
 	constructor(props) {
-	  super(props);
-	
-	  this.state = {};
+		super(props);
+		this.state = {};
 	}
 
 	render() {
@@ -13,6 +12,6 @@ export default class About extends Component {
 			<div>
 				<AboutPage />
 			</div>
-		)
+		);
 	}
 }

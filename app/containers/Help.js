@@ -3,9 +3,8 @@ import HelpPage from './../components/HelpPage';
 
 export default class Help extends Component {
 	constructor(props) {
-	  super(props);
-	
-	  this.state = {};
+		super(props);
+		this.state = {};
 	}
 
 	render() {
@@ -13,6 +12,6 @@ export default class Help extends Component {
 			<div>
 				<HelpPage />
 			</div>
-		)
+		);
 	}
 }

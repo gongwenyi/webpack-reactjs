@@ -2,28 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import WellcomePage from './../components/WellcomePage';
 
-export default class Home extends Component {
-	constructor(props) {
-	  super(props);
-	
-	  this.state = {};
-	}
-
-	render() {
-		return (
-			<div>
-				<div style={styles.nav}>
-						<Link activeStyle={{color: '#fff'}} style={styles.navItem} to="home/index">首页</Link>
-						<Link activeStyle={{color: '#fff'}} style={styles.navItem} to="home/hot">热门</Link>
-						<Link activeStyle={{color: '#fff'}} style={styles.navItem} to="home/user">我</Link>
-				</div>
-				{this.props.children || <WellcomePage />}
-			</div>
-		)
-	}
-}
-
-const styles= {
+const styles = {
 	nav: {
 		display: 'flex',
 		flexDirection: 'row',
@@ -47,5 +26,25 @@ const styles= {
 		color: '#ddd',
 		textDecoration: 'none',
 	},
+};
 
+export default class Home extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
+
+	render() {
+		return (
+			<div>
+				<div style={styles.nav}>
+					<Link activeStyle={{ color: '#fff' }} style={styles.navItem} to="home/index">首页</Link>
+					<Link activeStyle={{ color: '#fff' }} style={styles.navItem} to="home/hot">热门</Link>
+					<Link activeStyle={{ color: '#fff' }} style={styles.navItem} to="home/user">我</Link>
+				</div>
+				{this.props.children || <WellcomePage />}
+			</div>
+		);
+	}
 }
+

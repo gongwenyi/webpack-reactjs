@@ -19,9 +19,8 @@ import * as newsActionCreators from './../reducers/news/newsAction';
 
 export default class Index extends Component {
 	constructor(props) {
-	  super(props);
-	
-	  this.state = {};
+		super(props);
+		this.state = {};
 	}
 
 	render() {
@@ -29,6 +28,6 @@ export default class Index extends Component {
 			<div>
 				<IndexPage actions={this.props.actions} news={this.props.news} />
 			</div>
-		)
+		);
 	}
 }

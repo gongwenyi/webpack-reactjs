@@ -19,9 +19,8 @@ import * as authActionCreators from './../reducers/auth/authAction';
 
 export default class Login extends Component {
 	constructor(props) {
-	  super(props);
-	
-	  this.state = {};
+		super(props);
+		this.state = {};
 	}
 
 	render() {
@@ -29,6 +28,6 @@ export default class Login extends Component {
 			<div>
 				<LoginPage actions={this.props.actions} auth={this.props.auth}/>
 			</div>
-		)
+		);
 	}
 }

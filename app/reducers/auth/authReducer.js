@@ -3,12 +3,12 @@ import InitialState from './authInitialState';
 
 const initialState = new InitialState();
 
-export default function authReducer(state=initialState, action) {
-	if(!(state instanceof InitialState)) {
+export default function authReducer(state = initialState, action) {
+	if (!(state instanceof InitialState)) {
 		return initialState.mergeDeep(state);
 	}
 
-	switch(action.type) {
+	switch (action.type) {
 		case ActionTypes.FETCH_LOGIN_START: 														// 登录请求开始
 			return state.setIn(['login', 'isFetching'], true);
 		case ActionTypes.FETCH_LOGIN_SUCCESS: 													// 登录成功
@@ -25,6 +25,7 @@ export default function authReducer(state=initialState, action) {
 		case ActionTypes.FETCH_REGISTER_FAILD: 														// 注册失败
 			return state.setIn(['register', 'isFetching'], false)
 									.setIn(['register', 'isRegisterSuccess'], false);
+		// no default
 	}
 
 	return state;

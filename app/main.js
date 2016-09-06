@@ -24,9 +24,9 @@ import About from './containers/About';
 // 创建store 并且Add the reducer to your store on the `routing` key
 const store = createStore(
   combineReducers({
-    authReducer,
-    newsReducer,
-    routing: routerReducer
+		authReducer,
+		newsReducer,
+		routing: routerReducer,
   }),
   applyMiddleware(
     reduxThunkMiddleware 									// 允许我们 dispatch() 函数
@@ -59,8 +59,6 @@ ReactDOM.render(
 
 			</Route>
 		</Router>
-	</Provider>, 
+	</Provider>,
 	document.getElementById('app')
 );
-
-

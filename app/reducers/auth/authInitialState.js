@@ -1,16 +1,16 @@
 import { Record } from 'immutable';
 
-const LoginInitialState = Record({
+const LoginInitialState = new Record({
 	isFetching: false,
 	isLoginSuccess: false,
 });
 
-const RegisterInitialState = Record({
+const RegisterInitialState = new Record({
 	isFetching: false,
 	isRegisterSuccess: false,
 });
 
-let InitialState = Record({
+const InitialState = new Record({
 	login: new LoginInitialState(),
 	register: new RegisterInitialState(),
 });

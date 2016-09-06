@@ -11,9 +11,9 @@ import data from './login.json';
 export function register(username, password) {
 	return dispatch => {
 		dispatch(_fetchRegisterStart());
-		
+
 		dispatch(_fetchRegisterSuccess(username, password));
-	}
+	};
 }
 // 注册请求开始
 const _fetchRegisterStart = createAction(ActionTypes.FETCH_REGISTER_START);
@@ -58,13 +58,13 @@ export function login(username, password) {
 	return dispatch => {
 		dispatch(_fetchLoginStart());
 		setTimeout(() => {
-			if(data.status == 200) {
+			if (data.status === 200) {
 				dispatch(_fetchLoginSuccess(data));
 			} else {
-				dispatch(_fetchLoginFaild())
+				dispatch(_fetchLoginFaild());
 			}
 		}, 2000);
-	}
+	};
 }
 
 // 登录请求开始

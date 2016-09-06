@@ -1,11 +1,11 @@
 import { Record } from 'immutable';
 
-const UpdateIndexNewsInitialState = Record({
+const UpdateIndexNewsInitialState = new Record({
 	isFetching: false,
 	data: [],
 });
 
-let InitialState = Record({
+const InitialState = new Record({
 	updateIndexNews: new UpdateIndexNewsInitialState(),
 });
 

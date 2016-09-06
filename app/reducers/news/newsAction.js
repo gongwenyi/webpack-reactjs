@@ -9,14 +9,14 @@ export function updateIndexNews() {
 	return dispatch => {
 		dispatch(_fetchUpdateIndexNewsStart());
 		setTimeout(() => {
-			if(data.status == 200) {
+			if (data.status === 200) {
 				dispatch(_fetchUpdateIndexNewsSuccess(data));
 				// console.log(data);
 			} else {
-				dispatch(_fetchUpdateIndexNewsFaild())
+				dispatch(_fetchUpdateIndexNewsFaild());
 			}
 		}, 2000);
-	}
+	};
 }
 
 // 更新首页的新闻列表请求开始
