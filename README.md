@@ -16,4 +16,4 @@ webpack+react+babel+redux+material-ui搭建的react项目模板
 3.npm run build   再次打包,build目录包含项目所有的用于生产环境的文件
 
 ##4.代码规范
-为了让代码可读性和可维护性更好，加入了ESLint(ESLint检测规则：http://eslint.cn/docs/rules/)代码检测工具，检测规则使用的是eslint-config-airbnb(Airbnb JavaScript 代码规范（ES6）:http://www.kancloud.cn/kancloud/javascript-style-guide/43119)，相关的配置可以在项目的.eslintrc文件中查看。
+为了让代码可读性和可维护性更好，加入了ESLint(ESLint检测规则：http://eslint.cn/docs/rules/  )代码检测工具，检测规则使用的是eslint-config-airbnb(Airbnb JavaScript 代码规范（ES6）:http://www.kancloud.cn/kancloud/javascript-style-guide/43119 )，相关的配置可以在项目的.eslintrc文件中查看。
