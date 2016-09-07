@@ -1,15 +1,18 @@
 {
+  "parser": "babel-eslint",
   "extends": "airbnb",
   "parserOptions": {
+    "ecmaVersion": 6,
     "ecmaFeatures": {
       "jsx": true
     }
   },
-  "plugins": [
-  	"eslint-plugin-import",
-  	"eslint-plugin-jsx-a11y",
-  	"eslint-plugin-react"
+  "plugins": [  // 用到的插件，省略了eslint-plugin-前缀
+  	"react"
   ],
+  "globals": {
+    "localStorage": false                           // 定义全局变量localStorage，并且不允许被重写
+  },
   "rules": {
     "no-mixed-spaces-and-tabs": [2, "smart-tabs"],	// 不允许同时使用空格和tab缩进
     "indent": [2, "tab"],														// 缩进2个空格，并且只能使用tab键缩进，不能使用空格
